@@ -1,0 +1,41 @@
+ @import "../../responsive.scss";
+ .searchBar {
+    .type {
+      button {
+        padding: 16px 36px;
+        border: 1px solid #999;
+        cursor: pointer;
+        border-bottom: none;
+  
+        &.active {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  
+    form {
+      border: 1px solid #999;
+      display: flex;
+      height: 64px;
+
+      @include sm{
+         flex-direction: column;
+         
+      }
+  
+      input {
+        border: none;
+        padding: 8px 10px;
+        width: 500px;
+      }
+  
+      button {
+        border: none;
+        background-color: rgb(244, 217, 10);
+        cursor: pointer;
+        width: 100px;
+      }
+    }
+  }
+  
